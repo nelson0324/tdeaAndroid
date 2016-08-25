@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         } catch (Exception e) {
             Toast.makeText(MainActivity.this,"Debe Ingresar el Peso y la estatura",Toast.LENGTH_LONG).show();
+            txtEstatura.requestFocus();
         }
     }
 }
