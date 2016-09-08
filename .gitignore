@@ -1,8 +1,41 @@
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
+rchivos de aplicación construida
+* .apk
+* .ap_
+
+# Archivos para el arte / máquina virtual Dalvik
+* .dex
+
+# archivos de clase Java
+*.clase
+
+# Los archivos generados
+compartimiento/
+GEN /
+fuera/
+
+archivos # Gradle
+.gradle /
+construir/
+
+# Archivo de configuración local (ruta SDK, etc.)
+local.properties
+
+carpeta # Proguard generada por Eclipse
+Proguard /
+
+# Archivos de registro
+*.Iniciar sesión
+
+# archivos temporales editor Android Estudio de Navegación
+.navegación/
+
+# Android Studio captura carpeta
+capturas /
+
+# Intellij
+* .iml
+.idea / workspace.xml
+.idea / bibliotecas
+
+# archivos de almacén de claves
+* .jks
