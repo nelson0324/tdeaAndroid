@@ -1,5 +1,6 @@
 package nelson.co.com.plantasmedicinales;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lstPlanta;
+    private static final int IMC_ACTIVITY=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,17 @@ public class MainActivity extends AppCompatActivity {
         lstPlanta.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String valor= lstPlanta.getItemAtPosition(i).toString();
-                Toast.makeText(MainActivity.this, valor,Toast.LENGTH_LONG).show();
+                String item=lstPlanta.getItemAtPosition(i).toString();
+
+                switch (item){
+                    case "Imc":
+                        Intent intent = new Intent(MainActivity.this,IMCActivity.class);
+                        startActivity(intent);
+                        break;
+
+
+                }
+
             }
         });
 
