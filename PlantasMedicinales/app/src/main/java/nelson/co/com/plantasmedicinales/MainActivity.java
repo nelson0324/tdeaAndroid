@@ -1,6 +1,8 @@
 package nelson.co.com.plantasmedicinales;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +16,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lstPlanta;
-    private static final int IMC_ACTIVITY=1;
+    private static final int IR_A_IMC=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (item){
                     case "Imc":
                         Intent intent = new Intent(MainActivity.this,IMCActivity.class);
-                        startActivity(intent);
+                        //startActivity(intent);
+                        startActivityForResult(intent,IR_A_IMC);
                         break;
 
 
@@ -50,7 +53,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    protected void onActivityResult(int requestCode, int resultcode, Intent dato){
+
+                switch (requestCode){
+
+                    case IR_A_IMC:
+                            if(resultcode==RESULT_OK){
+                                Bundle b= new Bundle();
+                                b= dato.getExtras();
+                                if(b.getString("status").equals("done")){
+
+                                    AlertDialog.Builder dialogo= new AlertDialog.Builder(this);
+                                    dialogo.setTitle("Imc");
+                                    dialogo.setMessage("Su imc es "+ b.getFloat("imcValor"));
+                                    dialogo.setNegativeButton("Aceptar", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                                            dialogInterface.dismiss();
+
+                                        }
+                                    });
+
+                                    dialogo.create();
+                                    dialogo.show();
+                                }
+                            }
+                        break;
+
+                }
 
 
     }
+
+
+
 }
