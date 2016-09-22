@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opt_caseros"
+        android:title="Remedios Caseros" />
+    <item android:id="@+id/opt_plantasm"
+        android:title="Plantas Medicinales" >
+        <menu>
+            <item android:id="@+id/opt_ajo"
+                android:title="El ajo"></item>
+            <item android:id="@+id/opt_remolacha"
+                android:title="Remolacha"></item>
+        </menu>
+    </item>
+
+</menu>
