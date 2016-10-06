@@ -2,11 +2,137 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_50663fe9c2057589874992fba883e12ccdf0528a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_635e440169dd4101f9c8706869acc98bcafdd420\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_66d7b867899934e45fa123affb1882dc500bad45\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.0_8ed844960ab9a0ad791673da33af34b3b66f0f9e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_39a5c0c5eeedb5d9706833a4ca0defd9feb6a2f1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_10d963fd3f202d4f0460f0ff45a4567dfa813175\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_401b884d38e6e585193b5eb3a706bc5b2376e9ce\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_dcb1ad45eb8a8459187d9c3b4005a81ccb62ca2f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_154ff06fb91c168d48152f56483fcd0afce4a8d5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_f4a780e4d603446a4c979cde4584ad9e9d73c82e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="b1f15119852db1620381f02f12efc58646920e51">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a1a1afc24559f3401392698fe3e4c752139348e1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.0_69853970d6097ea6bf72422e6e5d678b0680ce7e\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="b4238d94638da7f5887ed136f2745e85846628f0">
+        sha1="3579c767f615a9a7c7b03f70be39e875b1f23aa6">
         <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9bf759d30c421730e10e1e5c2d8bd5f7eb92d3db\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_115f38a5f2270a8870a9ddf4258d84028270159b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_c769f7d2eea2fe10ff4a4e3992f9cba1249add28\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_f9aeb7ffe1b9b7fb0a861c2e62c877fb75edcb21\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_fe8867c6f3eb1baf7762f1605f57218b39c8b59b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_465943c20bc1f39e3f10d3fefd8944e4436dc434\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\Estudiante01\Desktop\tdea\tdeaAndroid\MenuOpcionesContexto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_1ec0b5ecd55837bdf7050784847f79d17f9124b3\classes.dex" />
     </item>
 
 </items>
