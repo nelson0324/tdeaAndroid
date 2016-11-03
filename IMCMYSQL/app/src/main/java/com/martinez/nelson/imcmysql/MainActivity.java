@@ -2,15 +2,24 @@ package com.martinez.nelson.imcmysql;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TabHost;
 
 public class MainActivity extends AppCompatActivity {
   private TabHost thimc;
+    private Spinner spEstadocivil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_main);
         thimc =(TabHost) findViewById(R.id.tabHost);
+        spEstadocivil =(Spinner) findViewById(R.id.spCivil);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_spinner_item, new String[]{"Casado","Soltero","Viudo","Union Libre"});
+        spEstadocivil.setAdapter(adapter);
+
         thimc.setup();
         TabHost.TabSpec persona = thimc.newTabSpec("Personas");
         persona.setIndicator("",getResources().getDrawable(R.drawable.personas));
