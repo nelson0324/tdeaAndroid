@@ -55,11 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         }//fin listar
-
+        if (view==btnGuardar) {
         if(validarDatos()){
-
-            if (view==btnGuardar) {
-
                 try {
                     ContentValues registro = new ContentValues();
                     registro.put("nombre", txtNombre.getText().toString());
@@ -79,13 +76,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(this,"Error No se pudo insertar",Toast.LENGTH_SHORT).show();
                 }
 
-            }//fin guardar
-
-        }else {
+            }else {
 
             Toast.makeText(MainActivity.this,"Debe ingresar todos los datos",Toast.LENGTH_SHORT).show();
+            }
+
+        }//fin guardar
+        if (view==btnActualizar){
+            if(validarDatos()){
+                try {
+                    ContentValues registro = new ContentValues();
+                    registro.put("edad", Integer.parseInt(txtEdad.getText().toString()));
+                    registro.put("peso", Float.parseFloat(txtPeso.getText().toString()));
+                    registro.put("estatura", Float.parseFloat(txtEstatura.getText().toString()));
+                    if( db.update("tblimc",registro,"nombre='"+txtNombre.getText().toString()+"'",null)>0) {
+                        Toast.makeText(this, "Se actualizo correctamente", Toast.LENGTH_SHORT).show();
+                    }else
+                        Toast.makeText(this,"Error No se pudo Actualizar",Toast.LENGTH_SHORT).show();
+
+                }catch (Exception e){
+
+                    e.printStackTrace();
+                    Toast.makeText(this,"Error No se pudo insertar",Toast.LENGTH_SHORT).show();
+                }
+
+            }else {
+
+                Toast.makeText(MainActivity.this,"Debe ingresar todos los datos",Toast.LENGTH_SHORT).show();
+            }
+        } if (view==btnEliminar){
+
+            if (txtNombre.getText().length()==0){
+                Toast.makeText(MainActivity.this,"Debe ingresar el nombre",Toast.LENGTH_SHORT).show();
+            }else{
+
+                if(db.delete("tblimc","nombre='"+txtNombre.getText().toString()+"'",null)>0){
+                    Toast.makeText(MainActivity.this,"Se elemino correctamente",Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
         }
 
+    }
+
+    private void limpiar(){
+            txtNombre.setText("");
+            txtEdad.setText("");
+            txtEstatura.setText("");
+            txtPeso.setText("");
     }
 
     private boolean validarDatos(){
