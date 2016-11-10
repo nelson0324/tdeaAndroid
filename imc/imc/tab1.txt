@@ -1,0 +1,76 @@
+<ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtnombre"
+                        android:hint="Nombre"
+                        android:maxLength="50"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtedad"
+                        android:hint="Edad"
+                        android:maxLength="3"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtpeso"
+                        android:hint="Peso"
+                        android:layout_marginTop="10dp"
+                        android:maxLength="5"
+                        android:inputType="numberDecimal"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtestatura"
+                        android:hint="Estatura"
+                        android:maxLength="4"
+                        android:layout_marginTop="10dp"
+                        android:inputType="numberDecimal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Sexo"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbhombre"
+                            android:text="Hombre"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbmujer"
+                            android:text="Mujer"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Estado civil"/>
+
+                    <Spinner
+                        android:id="@+id/spCivil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                    </LinearLayout>
+                    </ScrollView>

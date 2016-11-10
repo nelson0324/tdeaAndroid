@@ -1,0 +1,51 @@
+$db = new PDO("mysql:host=".HOST.";dbname=".BD.";charset=utf8",USUARIO,CLAVE);
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+public class HttpParser {
+    public String hacerSolicitud(String url, String[] parametrosNombre, String[] parametrosValores){
+        try {
+            //Se hace la conexión
+            URL urlc = new URL(url);
+            HttpURLConnection httpURLConnection = (HttpURLConnection)urlc.openConnection();
+            //Se configura la conexión
+            httpURLConnection.setRequestMethod("POST");
+            httpURLConnection.setDoOutput(true);//Se envia datos al webservice
+            httpURLConnection.setDoInput(true);//Se recive datos del webservice
+            //Formatear los datos a enviar
+            String datos="";
+            for(int i=0;i<parametrosValores.length;i++){
+                datos+= URLEncoder.encode(parametrosNombre[i],"UTF-8")+"="+URLEncoder.encode(parametrosValores[i],"UTF-8")+"&";
+                System.out.println(datos);
+            }
+            //Le quito un & al final que sobra
+            datos=(datos.length()>1)?datos.substring(0,datos.length()-1):"";
+
+            //Se envia los datos
+            OutputStream os = httpURLConnection.getOutputStream();
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
+            bw.write(datos);
+            bw.flush();
+            bw.close();
+            os.close();
+
+            //Se recive los datos
+            InputStream is = httpURLConnection.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(is,"UTF-8"));
+            String fila="";
+            StringBuilder sb = new StringBuilder();
+            while((fila=br.readLine())!=null){
+                sb.append(fila+"\n");
+            }
+            br.close();
+            is.close();
+            httpURLConnection.disconnect();
+            return sb.toString().trim();
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+}
